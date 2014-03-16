@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.plutext</groupId>
+	<artifactId>docx4j-cloud-GoogleDrive</artifactId>
+	<name>docx4j-cloud-GoogleDrive</name>
+	<version>3.0.1</version>
+	<description>
+		Demo project showing how to integrate Google Drive with docx4j
+	</description>
+	<url>http://www.plutext.com/</url>
+	<prerequisites />
+	<inceptionYear>2014</inceptionYear>
+	<developers>
+		<developer>
+			<id>jharrop</id>
+			<name>Jason Harrop</name>
+			<email>jharrop@plutext.com</email>
+			<organization>Plutext</organization>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>+10</timezone>
+		</developer>
+	</developers>
+	
+	  <properties>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	  </properties>	
+	
+	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
+		<outputDirectory>bin</outputDirectory>
+		<testOutputDirectory>bin</testOutputDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<verbose>false</verbose>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.0</version>
+			</plugin>
+	
+		</plugins>
+
+	</build>	
+	
+
+
+	<dependencies>
+	
+    <dependency>
+      <groupId>com.google.apis</groupId>
+      <artifactId>google-api-services-drive</artifactId>
+      <version>v2-rev116-1.17.0-rc</version>
+    </dependency>	
+    
+<dependency>
+    <groupId>com.google.http-client</groupId>
+    <artifactId>google-http-client-jackson2</artifactId>
+    <version>1.17.0-rc</version>
+</dependency>    
+
+
+
+<!-- 
+    <dependency>
+        <groupId>com.google.apis</groupId>
+        <artifactId>google-api-services-admin</artifactId>
+        <version>directory_v1-rev28-1.17.0-rc</version>
+    </dependency>
+
+<dependency>
+      <groupId>com.google.api-client</groupId>
+      <artifactId>google-api-client-servlet</artifactId>
+      <version>1.17.0-rc</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.api-client</groupId>
+      <artifactId>google-api-client-appengine</artifactId>
+      <version>1.17.0-rc</version>
+    </dependency>
+ -->
+ 
+		<dependency>
+			<groupId>org.docx4j</groupId>
+			<artifactId>docx4j</artifactId>
+			<version>3.0.2-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+		</dependency>
+
+
+	</dependencies>
+	
+</project>
